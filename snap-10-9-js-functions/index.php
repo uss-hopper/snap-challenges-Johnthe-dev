@@ -6,10 +6,12 @@
 	<script src="functions.js"></script>
 </head>
 <body>
+<!-- form for multiplying integers -->
 	<div id="multiplyForm">
 		<label for="multiplyForm">First Number<input type="number" id="int1" value="0">
 		Second Number<input type="number" id="int2" value="0"></label>
 	</div>
+<!-- form for concatenating strings -->
 	<div id="concatenateForm">
 
 	</div>
