@@ -1,0 +1,12 @@
+h1 {
+	padding-bottom: 3em;
+	text-align: center;
+}
+body {
+	justify-content: center;
+	align-items: center;
+}
+img {
+	align-self: center;
+	justify-self: center;
+}
