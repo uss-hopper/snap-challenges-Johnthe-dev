@@ -1,5 +1,14 @@
+/**
+ * convert a weight from a unit to grams.
+ *
+ * @param weight the weight or mass to be converted
+ * @param unit the unit that will be converted from
+ * @returns {string|number} mass in grams or error
+ */
 function convertToGrams(weight, unit) {
-	if(unit.toLowerCase()==="lbs") {
+	if (isNaN(weight)) {
+		return "Please enter a valid number."
+	} else if(unit.toLowerCase()==="lbs") {
 		return weight * 453.592;
 	} else if (unit.toLowerCase()==="oz") {
 		return weight * 28.3495;
@@ -14,6 +23,13 @@ function convertToGrams(weight, unit) {
 	}
 }
 
+
+/**
+ * return sum of positive factors of the input number
+ *
+ * @param number positive integer to find positive factors of
+ * @returns {string|number} sum of all positive factors or error
+ */
 function sumPositiveFactors(number) {
 	 if (Number.isInteger(number) === true) {
 		if (number>0) {
@@ -36,5 +52,5 @@ function sumPositiveFactors(number) {
 
 console.log(convertToGrams(5,"kg"));
 function initSumPositiveFactors() {
-	document.getElementById("resultsIntegerAdder").innerText = convertToGrams(document.getElementById("weightInput").value)
+	document.getElementById("resultsIntegerAdder").innerText = convertToGrams(document.getElementById("weightInput").value);
 }
