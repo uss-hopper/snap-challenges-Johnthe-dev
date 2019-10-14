@@ -25,7 +25,7 @@ function convertToGrams(weight, unit) {
 
 
 /**
- * return sum of positive factors of the input number
+ * return sum of unique positive factors of the input number
  *
  * @param number positive integer to find positive factors of
  * @returns {string|number} sum of all positive factors or error
