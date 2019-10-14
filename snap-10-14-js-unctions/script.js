@@ -34,4 +34,7 @@ function sumPositiveFactors(number) {
 	 }
 }
 
-console.log(sumPositiveFactors(12));
+console.log(convertToGrams(5,"kg"));
+function initSumPositiveFactors() {
+	document.getElementById("resultsIntegerAdder").innerText = convertToGrams(document.getElementById("weightInput").value)
+}
