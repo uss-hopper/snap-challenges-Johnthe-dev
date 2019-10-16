@@ -1,0 +1,1 @@
+select tweet.tweetContent,  profile.profileAtHandle from like inner join tweet on tweetId = likeTweetId inner join profile on profileId = likeProfileId where tweet.tweetId=unhex("0536faef082b454e9d444cdbe7887d7a");

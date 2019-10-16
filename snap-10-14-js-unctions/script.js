@@ -5,7 +5,7 @@
  * @param unit the unit that will be converted from
  * @returns {string|number} mass in grams or error
  */
-function convertToGrams(weight, unit) {
+/**function convertToGrams(weight, unit) {
 	if (isNaN(weight)) {
 		return "Please enter a valid number."
 	} else if(unit.toLowerCase()==="lbs") {
@@ -22,7 +22,7 @@ function convertToGrams(weight, unit) {
 		return "Not a valid unit, try lbs, oz, kg, g, or mg."
 	}
 }
-
+*/
 
 /**
  * return sum of unique positive factors of the input number
@@ -30,6 +30,7 @@ function convertToGrams(weight, unit) {
  * @param number positive integer to find positive factors of
  * @returns {string|number} sum of all positive factors or error
  */
+/**
 function sumPositiveFactors(number) {
 	 if (Number.isInteger(number) === true) {
 		if (number>0) {
@@ -53,4 +54,32 @@ function sumPositiveFactors(number) {
 console.log(convertToGrams(5,"kg"));
 function initSumPositiveFactors() {
 	document.getElementById("resultsIntegerAdder").innerText = convertToGrams(document.getElementById("weightInput").value);
+}*/
+//Write an algorithm that runs from 1 to 20. When the number is even, output 'fizz'.
+// When the number is divisible by 5, output 'buzz'. If it is neither even nor divisible
+// by five, output 'foo'.
+function fizzbuzz (number, fizzInterval, buzzInterval) {
+	let message = "";
+
+	for(let i=1;i<=number;i++) {
+		message = message + i;
+		if(i%fizzInterval===0) {
+			message = message + " fizz";
+		}
+
+		if(i%buzzInterval===0) {
+			message = message + " buzz";
+		}
+
+		if(i%buzzInterval!==0 && i%fizzInterval!==0) {
+			message=message + "foo"
+		}
+
+		message = message + '\n';
+	}
+
+	return message;
 }
+console.log(fizzbuzz(20, 3, 5));
+//Given two numbers, write an algorithm that outputs the sum of all odd numbers
+// between those numbers, inclusive.
