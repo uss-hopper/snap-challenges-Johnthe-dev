@@ -14,12 +14,8 @@ class WitchyWoman {
 
 	/**
 	 * WitchyWoman constructor.
-	 * @param $newAuthorId
-	 * @param $newAuthorActivationToken
-	 * @param $newAuthorAvatarUrl
-	 * @param $newAuthorEmail
-	 * @param $newAuthorHash
-	 * @param $newAuthorUsername
+	 * @param $newWitchyWomanId
+	 * @param $newWitchyWomanMoonInHerEyes
 	 */
 	public function __construct($newWitchyWomanId, $newWitchyWomanMoonInHerEyes) {
 
