@@ -59,4 +59,10 @@ class WitchyWoman {
 	public function setWitchyWomanMoonInHerEyes(string $newWitchyWomanMoonInHerEyes) {
 		$this->witchyWomanMoonInHerEyes = $newWitchyWomanMoonInHerEyes;
 	}
+	public function switchWitchyWomanAttributes() {
+		$witchyWomanIdMessage = $this->getWitchyWomanId();
+		$witchyWomanMoonInHerEyesMessage = $this->getWitchyWomanMoonInHerEyes();
+		$this->setWitchyWomanId($witchyWomanMoonInHerEyesMessage);
+		$this->setWitchyWomanMoonInHerEyes($witchyWomanIdMessage);
+	}
 }
