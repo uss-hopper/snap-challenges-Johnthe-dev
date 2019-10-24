@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF8">
+	<meta charset="UTF-8">
 	<title>Snap 10-23</title>
 </head>
 <body>
-	<h3>Types of branches</h3>
-	<ol>
-		<li>Master Branch- This is the stable, never posted to file that the world sees, only merged to from the "Release" branch, and only then if a sprint has been completed. Can be merged from Hotfix, but should be extremely rare.</li>
-		<li>Develop Branch- This branch is used to host the master branch with whatever tickets are completed at the time. This branch is usually stable, but needs a few tweaks or is waiting on more tickets before it is sent to the "Release" branch. This is also never pushed to, you must merge tickets into this branch.</li>
-		<li>Ticket Branch- This is where features, content editing, styling, etc takes place. In an ideal world it is the only branch where any actual coding happens. This is where we pull the current develop branch to and what we push to the develop branch with. </li>
-		<li>Release Branch-After a sprint is done and all current tickets are merged with develop, this branch is created. This is where we deal with any merge conflicts between our develop branch and the master branch. We can push to this file to correct merge errors, though hopefully any changes would be minimal at this point because of the develop branch.</li>
-		<li>Hot-fix Branch- When SHTF, this is a branch off of the master branch where we make changes that are vital to the function of our website. It is not for content changes or for implementing features. This would ideally never be created, but is sometimes the only way to fix what is wrong with the master branch.</li>
-	</ol>
+<h3>Types of branches</h3>
+<ol>
+	<li>Master Branch- This is the stable, never posted to file that the world sees, only merged to from the "Release"
+		branch, and only then if a sprint has been completed. Can be merged from Hotfix, but should be extremely rare.
+	</li>
+	<li>Develop Branch- This branch is used to host the master branch with whatever tickets are completed at the time.
+		This branch is usually stable, but needs a few tweaks or is waiting on more tickets before it is sent to the
+		"Release" branch. This is also never pushed to, you must merge tickets into this branch.
+	</li>
+	<li>Ticket Branch- This is where features, content editing, styling, etc takes place. In an ideal world it is the
+		only branch where any actual coding happens. This is where we pull the current develop branch to and what we push
+		to the develop branch with.
+	</li>
+	<li>Release Branch-After a sprint is done and all current tickets are merged with develop, this branch is created.
+		This is where we deal with any merge conflicts between our develop branch and the master branch. We can push to
+		this file to correct merge errors, though hopefully any changes would be minimal at this point because of the
+		develop branch.
+	</li>
+	<li>Hot-fix Branch- When SHTF, this is a branch off of the master branch where we make changes that are vital to the
+		function of our website. It is not for content changes or for implementing features. This would ideally never be
+		created, but is sometimes the only way to fix what is wrong with the master branch.
+	</li>
+</ol>
 </body>
 </html>
