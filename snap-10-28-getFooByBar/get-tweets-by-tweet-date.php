@@ -1,7 +1,13 @@
 <?php
-
-function getTweetsByTweetDate(\PDO $pdo, DateTime $tweetDate): \SplFixedArray {
-	// Validate the date using the ValidateDate trait
+/**
+ * gets all tweets that were posted on tweet day
+ *
+ * @param PDO $pdo
+ * @param DateTime $tweetDate
+ * @return SplFixedArray
+ */
+function getTweetByTweetDate(\PDO $pdo, DateTime $tweetDate): \SplFixedArray {
+	// Validate the date using the ValidateDate trait NOT NECESSARY
 	try {
 		$tweetDate = self::validateDateTime($tweetDate);
 	} catch(\InvalidArgumentException | \RangeException |\Exception | \TypeError $exception) {
@@ -9,11 +15,17 @@ function getTweetsByTweetDate(\PDO $pdo, DateTime $tweetDate): \SplFixedArray {
 		throw(new $exceptionType($exception->getMessage(), 0, $exception));
 	}
 
+	//start date and end date
+	$startDateString = date("Y-m-d")." 00:00:00";
+	$startDate = new DateTime($startDateString);
+	$endDate = new DateTime($startDateString);
+	$endDate->add(new DateInterval('P1D'));
+
 	//create query template
-	$query = "SELECT tweetId, tweetProfileId, tweetContent, tweetDate FROM tweet WHERE tweetDate = :tweetDate";
+	$query = "SELECT tweetId, tweetProfileId, tweetContent, tweetDate FROM tweet WHERE tweetDate >= :startDate AND tweetDate < :endDate";
 	$statement = $pdo->prepare($query);
 	//bind the tweet date to the place holder in the template
-	$parameters = ["tweetDate" => $tweetDate];
+	$parameters = ["startDate" => $startDate->format("Y-m-d H:i:s.u"),"endDate" => $endDate->format("Y-m-d H:i:s.u")];
 	$statement->execute($parameters);
 	//build an array of tweets
 	$tweets = new \SplFixedArray($statement->rowCount());
