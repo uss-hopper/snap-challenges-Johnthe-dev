@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+			integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			  crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+			  integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+			  crossorigin="anonymous"></script>
+
+	<title>Bootstrap Snap Challenge</title>
+</head>
+<body>
+<div class="container border border-dark rounded mt-3 d-none d-lg-block"">
+	<div class="row p-2">
+		<div class="col-1">
+			<img class="rounded-circle h-20" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhISFRUXFhUSEhYVEhUXGBYXFRUWFxgXFRYYHiggGRolHRUXITElJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy8lICYrNy4tLTUtLS0tKy8tNysxLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS8tLSstLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYCAwQHAQj/xAA7EAACAQIEAwUGBAUDBQAAAAAAAQIDEQQSITEFBkEiUWFxgRMykaHB8CNisdEHFEJS4XKS8RYkM0SC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAEDBAUCBv/EACURAQACAgICAQQDAQAAAAAAAAABAgMRBBIhMVETIiNBMjNxFP/aAAwDAQACEQMRAD8A9xAAAAAAAAAAAAALg8w47x2tLGutRnLLQ7MKeZ5akU/xLrbtdH4RZ6TgsTGrThUg7xnFTi+9SV0V0yxeZiFl8U0iJn9twALFYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARXMnE40KLbdpS7EPNrfwtuSpVOaKXt6sab0jBO9nq27Oy7lsU579aeF2Cne+pea8PdSdaoop2SyaJ7rRfI9J/h7WlHD/wAvUvGVNvKn1jJ3077O/ldHKoQpq0El5LV23b7yLxznKccsrRXam/mkvP8ATzOfTNNLbh0b4oyV6vSJzSV20l46HnnNXOc5qVPCycILsyrL3pd6p/2r82/dbc5uJY2U4unUblF97enkUHj0pU2qcbpXa2u7fbLp5M5J6x4U04sU8z5en/wojNRxGecpqUqdROUnJ3lGSer1/pRfSjfwuglCrZralGya0spdPX5F5NeD+EMmf+yQAFqkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqGKjJyqTTs3JpX1vvb00LXXk1FtbpOxV61VRpTnaUlCEqklG15KEXJpX6u1vUy8iNzENXHnW5UHlujjqDrvGTc7tNKVV1HF27WWVlZNt2j0VkSVbjlOlFzm0lZva/yKfW/iC6k+1SjGE3paUlJJd6krPr3EziuGtyhmWaMtHde8muqMmakxbd2zDes11VlwzjVPFSlkclKOrjKEou2aUbrNurxktNmmmdvHOH54pr3kvj1MOC8v0KLl7Ohlf9zk5dXZQu3lWvTwJzEUVFfuU369vs9Lab193t2/wvo2hVb3eRW7lHN+7L0UvkOolOou+1vTf9S6HT4s7xw5nKjWWQAGhnAAANdSqlua8VXyorPEOJPvKMueKQuxYZusjx0e8yp4qL6+BQcRxS3U6MHxN6amWOZO/TVPD8L6mfSL4Zjs/0JQ3UvF43DDek1nUgAPbyAAAAAAAAAAAAAAAAAAAAABV+LYiNBV5pXUYyk1db2vZX73p6loKZzLlisT7VJ03Sm53/ALXF3b8Fv4WM+edddfLRx43MxPw8nq4HBUMRCVdNRlkq04uDdNZoRnbsZrpZnvpp1Rd+I8bwcKf8w62eF4wSpxzNzn7sbLq/GxBYynD2XtcQ1dRyxdl2m1ooLq3ZWt08D7w3leVbLPEykqUbulR91rMkpOdtrpa6t9NCvNNZiOzb9Gcf8Z8rJwTjFLEUfawjKCzygs63yuzato1fqn0HEMUrWW+xE4/iFOk1TjlUYqyjHovBdER0MVKUlaLt+bT5Iw3n4XVj5TuFxEqSUoNp3umi1cK56w80o1n7KezbXYb8H+559XxLuor1sRHE3kd2mThy2xz4ec2Kt48vZ6nN+BX/ALEPS7JHh/E6NdXpVITX5Wm15rdH58xFnG6XicmA4jUpTz0pyhJdYya+0a45Vv3DJbi1/Uv00fGfn/8A684ha381Pa20b/GxGYjmDFzbzYmu76v8SX7lk8qPhX/yz8vdeOVspUsTXb+Z5xQ5hxcNq05Lum3JP4/Qm+H8yxqaVVkffrk/3br1+Jkyz2nbXijp4SWLpSm3bSxx0auIpO0ouUb+9HW3mt0SL/u+DTunfrdHJi8TJPR/e5Q0rvy3jM1tfMuVN6HlfL+LedJaZnrvv6HqWGjaK8jbwrbiYc/m11MS2gA3sIAAAAAAAAAAAAAAAAAAAAAEBzFSalGa7rffxJ84eMUs1N+DuU569qStwW63hTcLwnCwn7SFCjCe+aNKKa8tLL0ODjVObTtUdvypJ/EmZ/A5sVSVnb7ucq2S0+3WrSsKLRwFm79+7+rOmrXjFZYayeh2cSjZN2MOC4S6ztavXX78ive1utNOCwb96W5DcwzzOy6Fp4lUsssd2V3G4NRjdrzJiXm0eHNg6DnTt4W6kRVwUoycS4cGw3Z209DkxmHWd6Hvvp56bVyODdzcsHrf4k9QofaNdWhbQjvKekImjhkdVPBdyOylQ1JLD0LqzIm71FUbQhOn7srX3j0fmu83SqTl/TH0OuOHSdjtp4dHns9dWjgVZ0a1Oc1minqrdO/zPY6VRSSa2aujyV0klsX7k/G56Ki2rx0XkbOHk1aa/LDzce6xb4T4AOm5gAAAAAAAAAAAAAAAAAAAAAGM4ppp7PQyAFLx9Fwk4+JyVfHUsvMGGulNeT+hXFBuRxc+PpeYdjBk712ia2Fzy6/v0Op0VFWWjt/ySDior1/yRk8Rrp11RTrS/e3JiMPYiuMw7NixeyzPUieIUszEJOGq1P0OaVK7ZI4Kj2UjasLrsJlMIuFHUy/lbsmI4LQ2UsMQbhDxwaXQ35MqJhYOxrxHDm13DUnaFepTu/8ABJRjoa6mBcWdaWhEp2xo0Lkny9VdOrlu7M5aCN+EnatE9Y51aJeMkbiYX+LPpjT2RkfQQ4EgAAAAAAAAAAAAAAAAAAAAAAAOfH081OS8L/ApeKk4Px6F8Kzx7A5XeOz1Xg+qMXMxzMdobOJk1PWUTJOWvS1j5Twy62PtOLaaPtGraVmc6Pfl0Znx4YVKVkyM9ldvTUmas/2I+pHXTqLQmsvlKlY66VI6KeH20Oqnhm9kTWky82yRDjcDKnS7kS1DhEnvoSmF4bCGtrvvZopxbW9s1+TWvpAxwcuqt1Rn7C2stCyyjdWKhj5ShUcZt79lvqi++KuKFVMtskmMwylHTcr0qUsxYaOIRz4zCZWpLaWq+qMWWm/MNmK+vEuKibcF/wCZHyOkjVSqfjQSW7sVVjzC2fMS9FpbIyMKKskjM78enBn2AAlAAAAAAAAAAAAAAAAAAAAAAHFxenem/DU7TTi6eaEl3pnm8brMPVJ1aJVCTUbO5nKjCfbXTR+Zx4iPba20zfQlOE4T/tp96bfn3nKivadOrNorG0PVna7+9jDh9T2lRR6t2SPj312XQkOXMKpYiMtsqcvlb6lVI72iFl56VmVhocL7yQpUVFaI2g7Ncda+nHtktb2AA9vAcfEsBGrGz3Xuv76HYCLVi0alMTMTuHn+IhKlNxasyd4VVjWpulLSS7Uf8Elxjhsa0Hp20uy/o/AodXFzjdwbU6d5aru1szn3r9K3n030t9WvjxKUx2EcZ2ascNClbEUn0zq/qXLGYV1qUZ27eWMvO6u0VnEUbWcd4u680U5cP07bj0uxZu9dfte0DnwGKVWnGcXuvn1R0HWiYmNw5UxMTqQAEoAAAAAAAAAAAAAAAAAAAAAAAAUviULVmul5R/UmuBQ/AmvP9CE5hllrNfnT+Kv9SwcAX4Tfe3+iOfij8sx/roZZ/FE/4qFSn2nba7JzlNdufkl8yAnNqcu4sPKF3nl5Iz8ePywv5H9UrMADsOQAAAAABQ+a8Io4nT+qOa3ndP5/qXmtVUVeTSS3bPPeO8UhWxClC7ikoJ+N9/izLypjrr9tXFie2184a26NO+/s4X88qIXjeFyTzraWvlLr8f3J7CxtCKe+WKfwObjNHNSl3rtL0/xc95KdsavHfrkQvJqySrU811dVI+GZyuvkvkWgqfLEkqzt/VCSfmmn9WWwjizvG9cmNZAAGhnAAAAAAAAAAAAAAAAAAAAAAAwrVoxV5NJd7YFO5xp/jLreCfqm0T/L11h438WV/j2Op1avZknokn00bvr5ss/CKdqEF+X9TDi85rTDbl3GGsSotWGr7y3crUMtG/e2yp1E1Jvrt8C88GX4MP8ATcr4tfybW8u32adoAOk5oAAAAAiuZcDKtQlThLLJ2yy3SfiuqKZwXlGtSqqdWrCUc0ZSiqbTaj0UnJ2Xp1feekGmpBXKr462ncraZZrGobUzXivcl/pl+jNiRCc2VJqilF2UpKM3e1o7v42t6o9XnVZl4pG7RCB4JioqrCSas5pP/wCuz9S9Hn3L9OU6+XK3BSpyhNR7LSbk3mta+i08V4noJRxImKzto5cxNo0AA1MoAAAAAAAAAAAAAAAAAAAAAFZ5wwWIqrLSUGsqteTVpX6962LMfHG55vWLRqXql5rO4UfDcuYhyi5ypQikrxi5SenTWK6dS4YqsqdNyukktPoZYhpK9tlfRdx59zLxDOleV1Kaha+kbveSfRLW3X1M99YY+2PbRTeafun06J01Kat1slbxZfaUMqSXRJfAo/LGHjOrFQeaEO1fdO2yT+ZebMji11uZTyrbmIhkD5Y+mtkAAAAAA1VHqbGzUgltR8nG5kfGENMY6m81wNhCZAASgAAAAAAAAAAAAAAAAAAAAAAABrqGp0U9bL4IAJErHQgAS+gAIfBcAD6fGwANcmZQR8AS2GM2AEPkDMAAAAAAAAAAAAP/2Q==" alt="Happy Doggy">
+		</div>
+		<div class="col-1">
+			<a href="#">Link 1</a>
+		</div>
+		<div class="col-1">
+			<a href="#">Link 2</a>
+		</div>
+		<div class="col-1">
+			<a href="#">Link 3</a>
+		</div>
+		<div class="col-1">
+			<a href="#">Link 4</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="container border border-dark rounded d-lg-none" id="mobile">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<h4 class="navbar-brand">Title</h4>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems"
+				  aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarItems">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Link 1</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Link 2</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Link 3</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Link 4</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+
+</body>
+</html>
