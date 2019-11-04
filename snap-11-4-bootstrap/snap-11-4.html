@@ -21,6 +21,7 @@
 	<title>Bootstrap Snap Challenge</title>
 </head>
 <body>
+<!--Non navbar-->
 <div class="container bg-primary mt-3 d-none d-lg-block">
 	<div class="row p-2">
 		<div class="col-1">
@@ -32,35 +33,61 @@
 		<div class="col-1">
 			<a class="text-light" href="#">Link</a>
 		</div>
-		<div class="col-1">
-			<a class="text-light" href="#">Dropdown</a>
+		<div class="col-2">
+			<a class="text-light dropdown-toggle" href="#">Dropdown</a>
 		</div>
 	</div>
 </div>
-<div class="container mt-4">
+<!--navbar-->
+<div class="container bg-primary d-lg-none" id="mobile">
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+		<img class="navbar-brand" src="download.jpg" alt="Happy Doggy">
+		<button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarItems"
+				  aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarItems">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link dropdown-toggle" href="#">Dropdown</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+</div>
+
+
+<div class="container">
 	<div class="row">
-		<div class="col-3">
+		<div class="col-lg-3 my-4">
 			<div class="card">
 				<div class="card-title bg-light border">Riker</div>
 				<p class="card-text">Captain, why are we out here chasing comets? Talk about going nowhere fast. The game's
 					not big enough unless it scares you a little. Your head is not an artifact!</p>
 			</div>
 		</div>
-		<div class="col-3">
+		<div class="col-lg-3 my-4">
 			<div class="card border border-primary">
 				<div class="card-title bg-light border">Picard</div>
 				<p class="card-text">Captain, why are we out here chasing comets? Talk about going nowhere fast. The game's
 					not big enough unless it scares you a little. Your head is not an artifact!</p>
 			</div>
 		</div>
-		<div class="col-3">
+		<div class="col-lg-3 my-4">
 			<div class="card border border-danger">
 				<div class="card-title bg-light border">Neemoy</div>
 				<p class="card-text">Captain, why are we out here chasing comets? Talk about going nowhere fast. The game's
 					not big enough unless it scares you a little. Your head is not an artifact!</p>
 			</div>
 		</div>
-		<div class="col-3">
+		<div class="col-lg-3 my-4">
 			<div class="card  border border-warning">
 				<div class="card-title bg-light border">Shatner</div>
 				<p class="card-text">Captain, why are we out here chasing comets? Talk about going nowhere fast. The game's
@@ -70,42 +97,34 @@
 	</div>
 </div>
 
-<div class="container mt-4">
+<div class="container">
 	<div class="row">
-		<div class="col-3">
-
+		<div class="col-lg-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Vel pretium lectus quam id leo. Augue ut lectus arcu bibendum at. Quis vel eros donec
+				ac odio tempor orci. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi.
+				Faucibus interdum posuere lorem ipsum. Mauris a diam maecenas sed enim ut sem. Sit amet consectetur
+				adipiscing elit duis tristique. Commodo viverra maecenas accumsan lacus. Augue ut lectus arcu bibendum at
+				varius.</p>
+		</div>
+		<div class="col-lg-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Vel pretium lectus quam id leo. Augue ut lectus arcu bibendum at. Quis vel eros donec
+				ac odio tempor orci. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi.
+				Faucibus interdum posuere lorem ipsum. Mauris a diam maecenas sed enim ut sem. Sit amet consectetur
+				adipiscing elit duis tristique. Commodo viverra maecenas accumsan lacus. Augue ut lectus arcu bibendum at
+				varius.</p>
+		</div>
+		<div class="col-lg-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Vel pretium lectus quam id leo. Augue ut lectus arcu bibendum at. Quis vel eros donec
+				ac odio tempor orci. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi.
+				Faucibus interdum posuere lorem ipsum. Mauris a diam maecenas sed enim ut sem. Sit amet consectetur
+				adipiscing elit duis tristique. Commodo viverra maecenas accumsan lacus. Augue ut lectus arcu bibendum at
+				varius.</p>
 		</div>
 	</div>
 </div>
-
-
-
-<div class="container border border-dark rounded d-lg-none" id="mobile">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<h4 class="navbar-brand">Title</h4>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems"
-				  aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarItems">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Link 1</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Link 2</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Link 3</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Link 4</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</div>
-
 
 </body>
 </html>
