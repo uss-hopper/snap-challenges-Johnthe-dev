@@ -1,4 +1,4 @@
-const companyIndex = [{
+let companyIndex = [{
 	"id": 1,
 	"name": "Leanne Graham",
 	"username": "Bret",
