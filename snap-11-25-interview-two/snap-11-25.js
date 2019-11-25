@@ -19,8 +19,7 @@ function returnGreatest(inputArray) {
 console.log(returnGreatest([1,2,3,4,5,6,7,8,9,12,14,16,18,19,32,54,12,12,2,3,2,5,2,6,2346,546,45,6345,63456,3456345,634576,3456]));
 
 function fibonacciHundred(){
-	let sequence = [0,1];
-	let previous = 0;
+	let sequence = [1,1];
 	for(let i=1; i<=98; i++) {
 		sequence.push(sequence[i] + sequence[i-1]);
 	}
