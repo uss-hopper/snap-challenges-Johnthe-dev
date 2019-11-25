@@ -7,7 +7,7 @@ function removeVowels(inputString) {
 console.log(removeVowels("In pseudocode, write a function that takes a string and returns it with all vowels (not including y) removed"));
 
 function returnGreatest(inputArray) {
-	let greatest = 0;
+	let greatest = inputArray[0];
 	for (let i = 0; i<=inputArray.length;i++) {
 		if (inputArray[i]>=greatest) {
 			greatest = inputArray[i];
