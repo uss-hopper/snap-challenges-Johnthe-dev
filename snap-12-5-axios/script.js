@@ -11,7 +11,11 @@ const getBreeds = async () => {
 		const breeds = await getBreeds();
 
 		if (breeds.data.message) {
-			document.getElementById("target").innerText = (`${Object.keys(breeds.data.message)}`);
+			let listVertically = `${Object.keys(breeds.data.message)}`.toString();
+			listVertically = listVertically.split(",").join(", ");
+
+			//document.getElementById("target").innerText = (`${Object.keys(breeds.data.message)}`);
+			document.getElementById("target").innerText = listVertically;
 			console.log(`Got ${Object.entries(breeds.data.message).length} breeds`)
 		}
 	};
